@@ -1,5 +1,5 @@
 # Use a lightweight Python base image
-FROM python:3.13-0-alpine
+FROM python:3.13.0-slim-bullseye
 
 # Set the working directory in the container
 WORKDIR /app
@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Command to run the script
-CMD ["python", "ols_lookup.py"]
+CMD ["python", "src/ols_lookup.py"]
