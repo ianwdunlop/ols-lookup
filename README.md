@@ -1,6 +1,6 @@
 # Ontology Lookup
 
-Uses the Ontology Lookup Service from the EBI to discover details abotu a particular ontology.
+Uses the [Ontology Lookup Service](https://www.ebi.ac.uk/ols4) from the EBI to discover details about a particular ontology.
 
 ## How to use
 
@@ -35,4 +35,12 @@ Current status: LOADED
 
 ## Testing
 Run `python -m unittest`.
+
+## Extending
+The code is contained within `src/ols_lookup.py`. Look at the method `get_ontology_details` to understand how to send a request to the OLS API and `display_ontology_info` to understand how to process the response. Go the the [OLS API docs](https://www.ebi.ac.uk/ols4/help) to view the full set of URLs you can request data from. Add more methods using these same patterns to `src/ols_lookup.py` and accompanying tests to `test\test_ols_lookup.py`.
+
+## Licence
+
+Licensed under the Apache License, version 2.0 <https://www.apache.org/licenses/LICENSE-2.0>.  
+See the file `LICENSE.txt` for details.
 
