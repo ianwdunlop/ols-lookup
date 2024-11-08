@@ -13,6 +13,12 @@ pyenv local 3.13
 python3 -m venv
 ```
 
+Install the requirements
+
+```bash
+pip install -r requirements.txt
+```
+
 Pick the identifer for your favourite ontology eg `efo` and then run
 ```bash
 python -m src/ols_lookup.py
