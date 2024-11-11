@@ -10,7 +10,8 @@ pyenv install 3.13
 pyenv local 3.13
 ```
 ```bash
-python3 -m venv
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
 Install the requirements
