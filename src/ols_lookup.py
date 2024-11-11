@@ -14,11 +14,11 @@
 
 import requests
 
-def get_ontology_details(ontology_id: str) -> dict:
+def get_ontology_details(ontology_id: str) -> dict | None:
   """
   Fetches details about an ontology from the OLS API.
 
-  Args:
+  Inputs:
       ontology_id (str): The ID of the ontology.
 
   Returns:
@@ -37,7 +37,7 @@ def display_ontology_info(ontology_details: dict):
   """
   Prints the ontology details in a human-readable format.
 
-  Args:
+  Inputs:
       ontology_details (dict): A dictionary containing the ontology details.
   """
   if not ontology_details:
